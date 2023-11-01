@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+
+        .abc{
+            text-align: center;
+
+        }
+        #fm {
+            text-align:center;
+        }
+
+        .error{
+            color: red;
+
+        }
+    </style>
+</head>
+
+<body>
+  <div class="abc">
+    <form  onsubmit="return validateForm()">
+        <h1>Registration Form</h1>
+        <input type="text" name="fname" id="username" placeholder="First name"><br>
+        <p id="usererror" class="error"></p>
+
+        <input type="text" name="lname" id="secondname" placeholder="Last name"><br>
+        <p id="seconderror" class="error"></p>
+
+        <input type="Email" name="Email" id="email"placeholder="Email"><br><br>
+        <p id="Emailerror" class="error"></p>
+
+        <button type="submit" value="submit">Submit</button>
+
+
+    </form>
+    </div>
+    
+
+    <script>
+
+        let username = document.getElementById("username")
+        let email = document.getElementById("email")
+
+
+
+        function validateForm() {
+            if (username.value == "") {
+                document.getElementById("usererror").innerHTML = "* User name is empty";
+            }
+            else if (username.value.length < 10) {
+                document.getElementById("usererror").innerHTML = " *User name is required 10 characters.";
+            }
+
+            if (secondname.value == "") {
+                document.getElementById("seconderror").innerHTML = "* User name is empty";
+            }
+            else if (secondname.value.length < 5) {
+                document.getElementById("seconderror").innerHTML = " *User name is required ten characters.";
+
+
+            }
+            
+            // if (email.value == "") {
+            //     document.getElementById("emailerror").innerHTML = "* email is empty";
+            // }
+            // else if (email.value.)
+
+
+
+            return false;
+        }
+
+
+
+    </script>
+</body>
+
+</html>
