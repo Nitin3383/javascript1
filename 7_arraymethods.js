@@ -56,6 +56,9 @@
 // })
 // console.log(newslaries)
 // length of new array is always equal to new array.
+// let abc=[1,2,3,4,5]
+// let numbers=abc.map()
+// console.log(map*2)
 
 
 // filter method:-
@@ -110,3 +113,15 @@
 // const color=["red","green","blue"]
 // console.log(color.unshift("2"))
 // console.log(color)
+
+
+
+
+// filter method:-
+const arr=[1,2,3,4,5,6]
+function odd(x){
+    return x%2;
+}
+const output=arr.filter(odd)
+
+console.log(output)
